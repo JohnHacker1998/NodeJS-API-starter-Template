@@ -13,9 +13,10 @@ app.use(express.json())
 
 app.get('/', (req, res) => {
     res.json({
-        message: "Yooo"
+        message: "Hello World!!"
     })
 });
 app.use('/students', studentRouter);
+
 
 app.listen(3000, () => console.log("server started"));
